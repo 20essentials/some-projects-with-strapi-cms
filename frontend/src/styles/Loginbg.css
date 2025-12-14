@@ -1,0 +1,8 @@
+.am-login-bg {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  background-image: repeating-radial-gradient(  #f8f1f1ee 88%,#963fdd 90%);
+  background-size: 50px 50px;
+}

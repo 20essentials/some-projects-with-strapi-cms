@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "isBlank": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "default": "#"
+    }
+  },
+  "config": {}
+}
