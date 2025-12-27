@@ -40,8 +40,6 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
     INITIAL_STATE
   );
 
-  // console.log({ formState });
-
   return (
     <div className={cn('flex flex-col gap-6', className)} {...props}>
       <Card>
