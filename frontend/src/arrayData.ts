@@ -17,4 +17,10 @@ export const arrayCards = [
     localImage: '/assets/projects/login-form.avif',
     id: '03'
   },
+  {
+    title: 'Email Simple Plugin',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/config/plugins.ts',
+    localImage: '/assets/projects/email-plugin.avif',
+    id: '04'
+  },
 ];
