@@ -23,4 +23,10 @@ export const arrayCards = [
     localImage: '/assets/projects/email-plugin.avif',
     id: '04'
   },
+  {
+    title: 'Draft Mode Config',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/config/admin.ts',
+    localImage: '/assets/projects/draft-mode.avif',
+    id: '05'
+  },
 ];
