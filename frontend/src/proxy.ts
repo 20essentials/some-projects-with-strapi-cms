@@ -7,35 +7,46 @@ const checkIsProtectedRoute = (path: string) => protectedRoutes.includes(path);
 
 export async function proxy(request: NextRequest) {
   const routeRequest = request.nextUrl.pathname;
-  const isProtectedRouter = checkIsProtectedRoute(routeRequest);
-  if (!isProtectedRouter) return NextResponse.next();
+  const isProtectedRoute = checkIsProtectedRoute(routeRequest);
 
   const LOGIN_URL = new URL('/login', request.url);
 
   try {
-    const cookieStore = await cookies();
-    const jwt = cookieStore.get('jwt')?.value;
-    if (!jwt) {
-      return NextResponse.redirect(LOGIN_URL);
+    if (isProtectedRoute) {
+      const cookieStore = await cookies();
+      const jwt = cookieStore.get('jwt')?.value;
+      if (!jwt) return redirectWithCSP(LOGIN_URL);
+
+      const responseStrapi = await fetch(`${BACKEND_HOST}/api/users/me`, {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `bearer ${jwt}`,
+        },
+      });
+
+      const verifyUser = await responseStrapi.json();
+      if (!verifyUser) return redirectWithCSP(LOGIN_URL);
     }
 
-    const responseStrapi = await fetch(`${BACKEND_HOST}/api/users/me`, {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `bearer ${jwt}`
-      }
-    });
-    const verifyUseIsinStrapi = responseStrapi.json();
-    if (!verifyUseIsinStrapi) {
-      return NextResponse.redirect(LOGIN_URL);
-    }
-    return NextResponse.next();
+    return nextWithCSP();
   } catch (err) {
     console.error(err);
-    return NextResponse.redirect(LOGIN_URL);
+    return redirectWithCSP(LOGIN_URL);
   }
 }
 
+function nextWithCSP() {
+  const res = NextResponse.next();
+  res.headers.set('Content-Security-Policy', "frame-ancestors *");
+  return res;
+}
+
+function redirectWithCSP(url: URL) {
+  const res = NextResponse.redirect(url);
+  res.headers.set('Content-Security-Policy', "frame-ancestors *");
+  return res;
+}
+
 export const config = {
-  matcher: ['/', '/((?!api|_next/static|_next/image|.*\\.png$).*)']
+  matcher: ['/', '/((?!api|_next/static|_next/image|.*\\.png$).*)'],
 };

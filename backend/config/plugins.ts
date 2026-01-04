@@ -1,5 +1,5 @@
 export default ({ env }) => ({
-  email: {
+/*   email: {
     config: {
       provider: 'sendgrid',
       providerOptions: {
@@ -11,5 +11,5 @@ export default ({ env }) => ({
         testAddress: 'emailTest@gmail.com'
       }
     }
-  }
+  } */
 });
