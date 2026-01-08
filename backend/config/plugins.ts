@@ -1,5 +1,5 @@
 export default ({ env }) => ({
-/*   email: {
+  /*   email: {
     config: {
       provider: 'sendgrid',
       providerOptions: {
@@ -11,5 +11,14 @@ export default ({ env }) => ({
         testAddress: 'emailTest@gmail.com'
       }
     }
-  } */
+  }, */
+  'users-permissions': {
+    config: {
+      ratelimit: {
+        enabled: true,
+        interval: { min: 5 },
+        max: 5
+      }
+    }
+  }
 });
