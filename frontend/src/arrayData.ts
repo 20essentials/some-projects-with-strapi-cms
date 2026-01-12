@@ -29,10 +29,16 @@ export const arrayCards = [
     localImage: '/assets/projects/draft-mode.avif',
     id: '05'
   },
-    {
+  {
     title: 'rateLimit',
     web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/config/plugins.ts',
     localImage: '/assets/projects/rateLimit.avif',
     id: '06'
   },
+  {
+    title: 'Github Oauth + Route Handlers',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/frontend/src/app/api/connect/github/route.ts',
+    localImage: '/assets/projects/github-oauth.avif',
+    id: '07'
+  }
 ];
