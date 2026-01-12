@@ -21,6 +21,7 @@ import { formStateLogin } from '@/types/login-and-signup';
 import { useActionState } from 'react';
 import { actions } from '@/actions/index';
 import { ErrorMessage } from './ErrorMessage';
+import LoginGitHubButton from './login-github-button';
 
 const INITIAL_STATE: formStateLogin = {
   data: {
@@ -96,6 +97,8 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
           </form>
         </CardContent>
       </Card>
+      <p className='text-center'>or</p>
+      <LoginGitHubButton />
     </div>
   );
 }

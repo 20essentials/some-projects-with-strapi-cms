@@ -8,11 +8,20 @@ export const NODE_ENV = {
   develop: 'dev'
 }
 
-export const cookieConfig: Partial<ResponseCookie> = {
+/* export const cookieConfig: Partial<ResponseCookie> = {
   maxAge: 60 * 60 * 24 * 7, //1 week
   secure: true,
   domain: HOST ?? 'localhost',
   path: '/',
-  expires: 6,
+  expires: 60 * 60 * 24 * 7,
   httpOnly: ENVIRONMENT === NODE_ENV.production
+};
+ */
+
+export const cookieConfig: Partial<ResponseCookie> = {
+  maxAge: 60 * 60 * 24 * 7, // 1 semana
+  httpOnly: true,
+  sameSite: 'lax',
+  path: '/',
+  secure: process.env.NODE_ENV === 'production',
 };

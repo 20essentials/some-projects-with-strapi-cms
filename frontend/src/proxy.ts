@@ -15,7 +15,11 @@ export async function proxy(request: NextRequest) {
     if (isProtectedRoute) {
       const cookieStore = await cookies();
       const jwt = cookieStore.get('jwt')?.value;
-      if (!jwt) return redirectWithCSP(LOGIN_URL);
+      const githubJwt = cookieStore.get('github_jwt')?.value;
+      if (!jwt && !githubJwt) return redirectWithCSP(LOGIN_URL);
+      if (githubJwt) {
+         return nextWithCSP();
+      }
 
       const responseStrapi = await fetch(`${BACKEND_HOST}/api/users/me`, {
         headers: {
