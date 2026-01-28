@@ -71,4 +71,10 @@ export const arrayCards = [
     localImage: '/assets/projects/model-collection-type.avif',
     id: '12'
   },
+  {
+    title: 'Simple Service -> Custom Find',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/services/article.ts',
+    localImage: '/assets/projects/simple-service.avif',
+    id: '13'
+  },
 ];
