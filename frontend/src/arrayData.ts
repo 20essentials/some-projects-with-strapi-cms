@@ -49,7 +49,7 @@ export const arrayCards = [
   },
   {
     title: 'Swagger UI compatible Page ',
-    web: '',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/public/swagger.html',
     localImage: '/assets/projects/swagger-ui.avif',
     id: '09'
   },
