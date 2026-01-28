@@ -10,7 +10,7 @@ export default function LoginGitHubButton() {
   return (
     <button
       onClick={handleGitHubLogin}
-      className="btn bg-black text-white"
+      className="btn bg-black text-white px-3.5 py-1 rounded-full w-fit mx-auto cursor-pointer"
     >
       Login with GitHub
     </button>

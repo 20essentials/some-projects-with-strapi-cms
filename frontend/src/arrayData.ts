@@ -40,5 +40,11 @@ export const arrayCards = [
     web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/frontend/src/app/api/connect/github/route.ts',
     localImage: '/assets/projects/github-oauth.avif',
     id: '07'
-  }
+  },
+  {
+    title: 'Generating an OpenAPI specification ',
+    web: '',
+    localImage: '/assets/projects/github-oauth.avif',
+    id: '08'
+  },
 ];
