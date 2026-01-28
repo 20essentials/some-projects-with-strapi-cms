@@ -53,4 +53,10 @@ export const arrayCards = [
     localImage: '/assets/projects/swagger-ui.avif',
     id: '09'
   },
+  {
+    title: 'Custom Router Example',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/public/swagger.html',
+    localImage: '/assets/projects/swagger-ui.avif',
+    id: '10'
+  },
 ];
