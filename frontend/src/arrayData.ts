@@ -55,8 +55,20 @@ export const arrayCards = [
   },
   {
     title: 'Custom Router Example',
-    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/public/swagger.html',
-    localImage: '/assets/projects/swagger-ui.avif',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/routes/article.ts',
+    localImage: '/assets/projects/custom-router.avif',
     id: '10'
+  },
+  {
+    title: 'Controller Example',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/controllers/article.ts',
+    localImage: '/assets/projects/controller.avif',
+    id: '11'
+  },
+  {
+    title: 'Model Collection Type',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/content-types/article/schema.json',
+    localImage: '/assets/projects/model-collection-type.avif',
+    id: '12'
   },
 ];
