@@ -43,8 +43,8 @@ export const arrayCards = [
   },
   {
     title: 'Generating an OpenAPI specification ',
-    web: '',
-    localImage: '/assets/projects/github-oauth.avif',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/specification.json',
+    localImage: '/assets/projects/specifications-openapi.avif',
     id: '08'
   },
 ];
