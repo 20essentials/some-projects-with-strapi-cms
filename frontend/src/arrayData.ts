@@ -47,4 +47,10 @@ export const arrayCards = [
     localImage: '/assets/projects/specifications-openapi.avif',
     id: '08'
   },
+  {
+    title: 'Swagger UI compatible Page ',
+    web: '',
+    localImage: '/assets/projects/swagger-ui.avif',
+    id: '09'
+  },
 ];
