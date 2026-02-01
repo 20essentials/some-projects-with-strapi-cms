@@ -1,3 +1,5 @@
+import middlewares from '../../../../config/middlewares';
+
 export default {
   type: 'content-api',
   routes: [
@@ -6,7 +8,8 @@ export default {
       path: '/articles/get-random-article',
       handler: 'article.getRandomArticle',
       config: {
-        auth: false
+        auth: false,
+        middlewares: ['api::article.my-middleware']
       }
     },
     {
@@ -16,6 +19,6 @@ export default {
       config: {
         auth: false
       }
-    },
+    }
   ]
 };
