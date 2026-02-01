@@ -95,4 +95,10 @@ export const arrayCards = [
     localImage: '/assets/projects/webhook-call.avif',
     id: '16'
   },
+  {
+    title: 'CRON Task',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/config/cron-task.ts',
+    localImage: '/assets/projects/cron-task.avif',
+    id: '17'
+  },
 ];
