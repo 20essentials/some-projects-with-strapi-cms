@@ -9,7 +9,8 @@ export default {
       handler: 'article.getRandomArticle',
       config: {
         auth: false,
-        middlewares: ['api::article.my-middleware']
+        middlewares: ['api::article.my-middleware'],
+        policies: ['api::article.my-policy']
       }
     },
     {
