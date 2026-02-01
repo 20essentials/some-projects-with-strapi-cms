@@ -77,4 +77,10 @@ export const arrayCards = [
     localImage: '/assets/projects/simple-service.avif',
     id: '13'
   },
+  {
+    title: 'Backend: API-level middleware mutation',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/middlewares/my-middleware.ts',
+    localImage: '/assets/projects/my-middleware.avif',
+    id: '14'
+  },
 ];
