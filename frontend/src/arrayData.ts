@@ -89,4 +89,10 @@ export const arrayCards = [
     localImage: '/assets/projects/custom-policy.avif',
     id: '15'
   },
+  {
+    title: 'Webhook',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/frontend/src/app/api/revalidate-path/route.ts',
+    localImage: '/assets/projects/webhook-call.avif',
+    id: '16'
+  },
 ];
