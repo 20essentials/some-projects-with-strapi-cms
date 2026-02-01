@@ -25,3 +25,8 @@ export interface HomeData {
   Link?: Link;
   sections?: HeroSection[];
 }
+export interface PublishData {
+  id: number;
+  documentId: string;
+  publishedAt?: string;
+}

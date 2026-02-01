@@ -1,4 +1,4 @@
-import { HomeData } from '@/types/homepage';
+import { HomeData, PublishData } from '@/types/homepage';
 import { BACKEND_HOST, NEXT_PRIVATE_API_TOKEN_READONLY } from './config';
 import qs from 'qs';
 import { loginType, signupType } from '@/types/login-and-signup';
@@ -54,6 +54,11 @@ export async function getHomeData() {
     `/api/homepage?${query}&status=${isEnabled ? 'draft' : 'published'}`
   );
   return resp?.data;
+}
+
+export async function getLastPublishDate() {
+  const resp = await getStrapiData(`/api/random-info`) as { data: PublishData };
+  return resp.data;
 }
 
 export async function signupUser(signupUser: signupType) {

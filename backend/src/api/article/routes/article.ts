@@ -1,4 +1,3 @@
-import middlewares from '../../../../config/middlewares';
 
 export default {
   type: 'content-api',

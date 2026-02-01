@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "random_infos",
+  "info": {
+    "singularName": "random-info",
+    "pluralName": "random-infos",
+    "displayName": "random-info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Message": {
+      "type": "string"
+    }
+  }
+}
