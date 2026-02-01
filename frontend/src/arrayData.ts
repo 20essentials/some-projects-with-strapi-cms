@@ -83,4 +83,10 @@ export const arrayCards = [
     localImage: '/assets/projects/my-middleware.avif',
     id: '14'
   },
+  {
+    title: 'Backend: Custom Simple Policy',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/api/article/policies/my-policy.ts',
+    localImage: '/assets/projects/custom-policy.avif',
+    id: '15'
+  },
 ];
