@@ -107,4 +107,10 @@ export const arrayCards = [
     localImage: '/assets/projects/custom-conditions.avif',
     id: '18'
   },
+  {
+    title: 'Feature Flag Config',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/config/features.ts',
+    localImage: '/assets/projects/feature-flag.avif',
+    id: '19'
+  },
 ];
