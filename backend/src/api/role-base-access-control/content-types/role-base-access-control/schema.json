@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "role_base_access_controls",
+  "info": {
+    "singularName": "role-base-access-control",
+    "pluralName": "role-base-access-controls",
+    "displayName": "role-base-access-control"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "json"
+    }
+  }
+}

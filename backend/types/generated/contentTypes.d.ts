@@ -530,6 +530,35 @@ export interface ApiRandomInfoRandomInfo extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiRoleBaseAccessControlRoleBaseAccessControl
+  extends Struct.SingleTypeSchema {
+  collectionName: 'role_base_access_controls';
+  info: {
+    displayName: 'role-base-access-control';
+    pluralName: 'role-base-access-controls';
+    singularName: 'role-base-access-control';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::role-base-access-control.role-base-access-control'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1043,6 +1072,7 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::random-info.random-info': ApiRandomInfoRandomInfo;
+      'api::role-base-access-control.role-base-access-control': ApiRoleBaseAccessControlRoleBaseAccessControl;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
