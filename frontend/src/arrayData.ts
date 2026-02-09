@@ -101,4 +101,10 @@ export const arrayCards = [
     localImage: '/assets/projects/cron-task.avif',
     id: '17'
   },
+  {
+    title: 'Custom conditions for Role-Based Access Control (RBAC)',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/index.ts',
+    localImage: '/assets/projects/custom-conditions.avif',
+    id: '18'
+  },
 ];
