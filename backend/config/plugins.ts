@@ -20,7 +20,9 @@ export default ({ env }) => ({
         max: 5
       }
     }
-  }
+  },
+ /*  'content-metrics': {
+    enabled: true,
+    resolve: './src/plugins/content-metrics'
+  } */
 });
-
-
