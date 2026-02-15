@@ -113,4 +113,10 @@ export const arrayCards = [
     localImage: '/assets/projects/feature-flag.avif',
     id: '19'
   },
+  {
+    title: 'Custom Widget',
+    web: 'https://github.com/20essentials/some-projects-with-strapi-cms/blob/main/backend/src/plugins-(draft)/content-metrics/admin/src/components/MetricsWidget/index.jsx',
+    localImage: '/assets/projects/custom-widget.avif',
+    id: '20'
+  },
 ];
