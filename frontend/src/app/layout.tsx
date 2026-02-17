@@ -3,7 +3,7 @@ import './globals.css';
 import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: 'Strapi Practice',
+  title: 'Some projects and parts of code using Strapi',
   description: 'Practicing with strapi',
   icons: {
     icon: '/assets/favicon.png'
